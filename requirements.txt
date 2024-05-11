@@ -2,3 +2,5 @@ numpy
 streamlit
 streamlit-option-menu
 Pillow
+streamlit-plotly-mapbox-events
+plotly-express
