@@ -31,8 +31,8 @@ if(Pilihan=='Home'):
     
     Menu = option_menu(
         menu_title= '',
-        options=['Terdekat', 'Populer','Banyak Diskon'],
-        icons= ['award-fill','database-fill-down'],
+        options=['Terdekat', 'Populer','Banyak Diskon','Voucher'],
+        icons= ['pin-map','bag-heart','bag-check','postcard'],
         menu_icon="cast", 
         default_index=0,
         orientation="horizontal",
@@ -80,6 +80,72 @@ if(Pilihan=='Home'):
             st.write('Siomay Ikan Bu Rika')
             st.write('⭐4.9')
             but2=st.button('Selengkapnya>>>')
+            
+    if (Menu=='Banyak Diskon'):
+        col1,col2,col3=st.columns(3)
+        with col1:
+            image = Image.open('sate.jpg')
+            st.image(image)
+            st.write('Sate ayam Pak Mus')
+            st.write('Diskon 40%')
+            but=st.button('Selengkapnya>')
+        with col2:
+            image = Image.open('seblak.jpeg')
+            st.image(image)
+            st.write('Seblak Bandung Teh Lilis')
+            st.write('Diskon 20%')
+            st.write('✅Geratis Ongkir')
+            but1=st.button('Selengkapnya>>')
+        with col3:
+            image = Image.open('siomay.jpg')
+            st.image(image)
+            st.write('Siomay Ikan Bu Rika')
+            st.write('✅Geratis Ongkir')
+            but2=st.button('Selengkapnya>>>')
+            
+    if (Menu== 'Voucher'):
+        st.header('Voucher Makanan')
+        col1,col2,col3=st.columns(3)
+        with col1:
+            image = Image.open('v1.png')
+            st.image(image)
+            but1=st.button('Klaim  ')
+            if but1:
+                st.success("Voucher berhasil diklaim")
+        with col2:
+            image = Image.open('v2.png')
+            st.image(image)
+            but2= st.button('Klaim ')
+            if but2:
+                st.success("Voucher berhasil diklaim")
+        with col3:
+            image = Image.open('v3.png')
+            st.image(image)
+            but3= st.button('Klaim   ')
+            if but3:
+                st.success("Voucher berhasil diklaim")
+                
+        st.header('Voucher Geratis Ongkir')
+        col1,col2,col3=st.columns(3)
+        with col1:
+            image = Image.open('v6.png')
+            st.image(image)
+            but4=st.button('Klaim          ')
+            if but4:
+                st.success("Voucher berhasil diklaim")
+        with col2:
+            image = Image.open('v4.png')
+            st.image(image)
+            but5= st.button('Klaim    ')
+            if but5:
+                st.success("Voucher berhasil diklaim")
+        with col3:
+            image = Image.open('v5.png')
+            st.image(image)
+            but6= st.button('Klaim       ')
+            if but6:
+                st.success("Voucher berhasil diklaim")
+
 
 if (Pilihan=='Pesanan Saya'):
     st.header('Pesanan Saya🍟')
@@ -93,6 +159,8 @@ if (Pilihan=='Pesanan Saya'):
         st.subheader('Rp. 28.000')
         st.button('Pesan lagi')
         st.button('Beri Penilian')
+
+
     
         
         
