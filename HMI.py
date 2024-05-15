@@ -59,6 +59,19 @@ if(Pilihan=='Home'):
         plot_name_holder_clicked = st.empty()
         plot_name_holder_selected = st.empty()
         plot_name_holder_hovered = st.empty()
+        
+        but=st.button('Pilih')
+        if but:
+            st.write('Menu Makanan')
+            col1,col2,col3=st.columns(3)
+            with col1:
+                image = Image.open('sate.jpg')
+                st.image(image)
+            with col2:
+                st.write('Sate ayam')
+                jumlahst= st.number_input("Jumlah",0)
+                
+        
     
     if Menu== "Populer":
         col1,col2,col3=st.columns(3)
