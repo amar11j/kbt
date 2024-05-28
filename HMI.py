@@ -281,7 +281,7 @@ if(Pilihan=='Home'):
             image = Image.open('seblak.jpeg')
             st.image(image)
             st.write('Seblak Bandung Teh Lilis')
-            st.write('Diskon 20% ✅Geratis Ongkir')
+            st.write('Diskon 20% ✅Gratis Ongkir')
             but1= st.button('Selengkapnya ', on_click=on_dis2_click)
             if st.session_state.dis2_clicked:
                 df = pd.DataFrame(
@@ -293,7 +293,7 @@ if(Pilihan=='Home'):
             image = Image.open('siomay.jpg')
             st.image(image)
             st.write('Siomay Ikan Bu Rika')
-            st.write('✅Geratis Ongkir')
+            st.write('✅Gratis Ongkir')
             but2=st.button('Selengkapnya>>>')
             
     if (Menu== 'Voucher'):
